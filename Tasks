@@ -1,0 +1,68 @@
+<button onclick="foo()">click</button>
+<div id="div">Hello</div>
+<div id="div1">Goodbye</div>
+<script>
+    function foo() {
+        let x = document.getElementById("div");
+        let y = document.getElementById("div1");
+        if(x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+<button onclick="foo()">click</button>
+<div id="div">just a text</div>
+<script>
+    function foo() {
+        let x = document.getElementById("div");
+        if(x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    
+</script>
+
+<style>
+    .container {
+      position: relative;
+    }
+    
+    .button {
+      position: absolute;
+      top: 350px;
+      right: 650px;
+    }
+    </style>
+    
+<div class="container">
+    <button class="button">Click me</button>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">New</a></li>
+        </ul>
+    </body>
+</html>
